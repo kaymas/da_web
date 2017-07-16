@@ -1,0 +1,226 @@
+html
+  font-size: 10px
+  margin: 0
+  padding: 0
+
+body
+  font-size: 1.6rem
+  font-family: 'Open Sans', sans-serif
+  margin: 0
+  padding: 0
+
+// ---------------------------HEADER----------------------
+
+header
+  height: 50rem
+  background: #333
+  margin: 0
+  padding: 0
+
+  .logo
+    width: 5rem
+    height: 5rem
+    border-radius: 50%
+    background: pink
+    float: left
+    display: inline-block
+    margin: 1rem 0 0 2rem
+
+  nav
+    float: right
+    margin: 2rem 4rem 0 0
+
+    a
+      display: inline-block
+      margin-left: 2rem
+      color: rgba(255,255,255,0.7)
+      text-decoration: none
+      letter-spacing: 0.2rem
+      font:
+        weight: 500
+        size: 1.6rem
+      text-transform: uppercase
+
+      &:hover
+        color: rgba(255,255,255,1)
+
+  h1
+    font-size: 7.2rem
+    font-weight: 700
+    color: rgba(255,255,255,0.7)
+    text-transform: uppercase
+    clear: both
+    letter-spacing: 0.25rem
+    word-spacing: 0.2rem
+    text-align: center
+    margin-bottom: 2rem
+    padding-top: 10rem
+
+  p.kicker
+    font-size: 1.4rem
+    color: rgba(255,255,255,0.7)
+    line-height: 1
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.3rem
+    text-align: center
+
+
+// ---------------------------MAIN----------------------
+
+
+main
+
+  h3
+    text-align: center
+    font-size: 2.6rem
+    font-weight: 500
+    letter-spacing: 0.2rem
+    color: rgba(0,0,0,0.7)
+    text-transform: uppercase
+    padding: 10rem 0 3rem 0
+    word-spacing: 0.5rem
+
+  .face-lockup
+    max-width: 100rem
+    display: flex
+    margin: 0 auto
+    align-items: center
+    justify-content: space-between
+
+    .face-img
+      width: 20rem
+      height: 20rem
+      background: pink
+      border-radius: 50%
+      order: 3
+
+    [class ^= "icon-"]
+      width: 10rem
+      height: 10rem
+      background: pink
+      border-radius: 50%
+
+      &.icon-1
+        order: 1
+
+      &.icon-2
+        order: 2
+
+      &.icon-3
+        order: 4
+
+      &.icon-4
+        order: 5
+
+  @media screen and (max-width: 700px)
+    .face-lockup
+      display: block
+      text-align: center
+
+      div
+        display: inline-block
+
+      .face-img
+        display: block
+        margin: 0 auto 3rem
+
+      [class^="icon-"]
+        margin: 1rem
+
+  .blurb
+    max-width: 60rem
+    padding: 0 1rem
+    margin: 5rem auto 5rem
+    font-size: 2.4rem
+    font-weight: 300
+    text-align: center
+    letter-spacing: 0.2rem
+    word-spacing: 0.2rem
+
+
+  .skill-lockup
+    max-width: 54rem
+    margin: 10rem auto
+    color: rgba(0,0,0,0.6)
+
+    .skill-unit
+      width: 27rem
+      float: left
+      text-align: center
+
+      .skill-icons
+        font-size: 0
+        //since half of the spans in the markup are separated by a newline
+        //Now, there is bug that because spans are inline-block as defined
+        //in below code hence there is whitespace because of that new-line
+        //---> to counter it we set font-size to zero(0).
+        margin: 0.3rem 0 5rem
+
+        span
+          display: inline-block
+          width: 1.4rem
+          height: 1.4rem
+          background-color: darken(pink,15)
+          margin-right: 0.5rem
+          border-radius: 50%
+
+          // &:after
+          //   content: ''
+          //   display: block
+          //   width: 0.5rem
+          //   height: 0.5rem
+          //   background: white
+          //   border-radius: 50%
+          //   margin: 0.4rem
+
+        @for $i from 1 through 10
+          &.skill-#{$i} span:nth-child(n+#{$i})
+            background: rgba(0,0,0,0.4)
+
+@media screen and (max-width: 50rem)
+  .skill-lockup
+    width: 27rem
+
+// ---------------------------FOOTER----------------------
+
+
+footer
+  background: #333
+  // height: 20rem
+  margin-top: 1rem
+
+  .lockup
+    padding: 5rem 3rem
+
+    .logo
+      width: 5rem
+      height: 5rem
+      background: pink
+      border-radius: 50%
+      display: inline-block
+      float: left
+      margin-right: 3rem
+
+    .content-wrap
+      float: left
+
+      .copyright
+        margin: 0
+        color: rgba(255,255,255,0.4)
+        text-transform: uppercase
+        font-size: 1.3rem
+        padding-top: 0.4rem
+
+      a
+        font-size: 1.6rem
+        letter-spacing: 0.2rem
+        color: rgba(255,255,255,0.7)
+        text-decoration: none
+        display: inline-block
+        margin-right: 3rem
+        font-weight: 500
+        text-transform: uppercase
+
+        &:hover
+          color: rgba(255,255,255,1)

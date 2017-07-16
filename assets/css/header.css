@@ -1,0 +1,188 @@
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 50rem;
+  background: #333;
+  margin: 0;
+  padding: 0; }
+  header .logo {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: pink;
+    float: left;
+    display: inline-block;
+    margin: 1rem 0 0 2rem; }
+  header nav {
+    float: right;
+    margin: 2rem 4rem 0 0; }
+    header nav a {
+      display: inline-block;
+      margin-left: 2rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      letter-spacing: 0.2rem;
+      font-weight: 500;
+      font-size: 1.6rem;
+      text-transform: uppercase; }
+      header nav a:hover {
+        color: white; }
+  header h1 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    clear: both;
+    letter-spacing: 0.25rem;
+    word-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 10rem; }
+  header p.kicker {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-align: center; }
+
+main h3 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  padding: 10rem 0 3rem 0;
+  word-spacing: 0.5rem; }
+main .face-lockup {
+  max-width: 100rem;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between; }
+  main .face-lockup .face-img {
+    width: 20rem;
+    height: 20rem;
+    background: pink;
+    border-radius: 50%;
+    order: 3; }
+  main .face-lockup [class^="icon-"] {
+    width: 10rem;
+    height: 10rem;
+    background: pink;
+    border-radius: 50%; }
+    main .face-lockup [class^="icon-"].icon-1 {
+      order: 1; }
+    main .face-lockup [class^="icon-"].icon-2 {
+      order: 2; }
+    main .face-lockup [class^="icon-"].icon-3 {
+      order: 4; }
+    main .face-lockup [class^="icon-"].icon-4 {
+      order: 5; }
+@media screen and (max-width: 700px) {
+  main .face-lockup {
+    display: block;
+    text-align: center; }
+    main .face-lockup div {
+      display: inline-block; }
+    main .face-lockup .face-img {
+      display: block;
+      margin: 0 auto 3rem; }
+    main .face-lockup [class^="icon-"] {
+      margin: 1rem; } }
+main .blurb {
+  max-width: 60rem;
+  padding: 0 1rem;
+  margin: 5rem auto 5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.2rem; }
+main .skill-lockup {
+  max-width: 54rem;
+  margin: 10rem auto;
+  color: rgba(0, 0, 0, 0.6); }
+  main .skill-lockup .skill-unit {
+    width: 27rem;
+    float: left;
+    text-align: center; }
+    main .skill-lockup .skill-unit .skill-icons {
+      font-size: 0;
+      margin: 0.3rem 0 5rem; }
+      main .skill-lockup .skill-unit .skill-icons span {
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        background-color: #ff748c;
+        margin-right: 0.5rem;
+        border-radius: 50%; }
+      main .skill-lockup .skill-unit .skill-icons.skill-1 span:nth-child(n+1) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-2 span:nth-child(n+2) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-3 span:nth-child(n+3) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-4 span:nth-child(n+4) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-5 span:nth-child(n+5) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-6 span:nth-child(n+6) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-7 span:nth-child(n+7) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-8 span:nth-child(n+8) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-9 span:nth-child(n+9) {
+        background: rgba(0, 0, 0, 0.4); }
+      main .skill-lockup .skill-unit .skill-icons.skill-10 span:nth-child(n+10) {
+        background: rgba(0, 0, 0, 0.4); }
+
+@media screen and (max-width: 50rem) {
+  .skill-lockup {
+    width: 27rem; } }
+footer {
+  background: #333;
+  margin-top: 1rem; }
+  footer .lockup {
+    padding: 5rem 3rem; }
+    footer .lockup .logo {
+      width: 5rem;
+      height: 5rem;
+      background: pink;
+      border-radius: 50%;
+      display: inline-block;
+      float: left;
+      margin-right: 3rem; }
+    footer .lockup .content-wrap {
+      float: left; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.4);
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        padding-top: 0.4rem; }
+      footer .lockup .content-wrap a {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 3rem;
+        font-weight: 500;
+        text-transform: uppercase; }
+        footer .lockup .content-wrap a:hover {
+          color: white; }
+
+/*# sourceMappingURL=header.css.map */
